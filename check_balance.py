@@ -1,5 +1,6 @@
 import os
 
+
 normal_path = r"C:\Users\melak\Downloads\Chest_Xray_Final\train\NORMAL"
 pneumonia_path = r"C:\Users\melak\Downloads\Chest_Xray_Final\train\PNEUMONIA"
 
