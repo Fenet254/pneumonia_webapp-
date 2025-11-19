@@ -3,6 +3,7 @@ import os
 
 normal_path = r"C:\Users\melak\Downloads\Chest_Xray_Final\train\NORMAL"
 
+
 pneumonia_path = r"C:\Users\melak\Downloads\Chest_Xray_Final\train\PNEUMONIA"
 
 normal_count = len(os.listdir(normal_path))
