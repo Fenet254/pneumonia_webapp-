@@ -1,9 +1,14 @@
 import numpy as np
+import os
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(script_dir, "model", "pneumonia_classifier_model.keras")
+
 # Load the trained model once
-model = load_model("model/pneumonia_classifier_model.keras")
+model = load_model(model_path)
 
 def predict_image(filepath):
     img = image.load_img(filepath, target_size=(150, 150))

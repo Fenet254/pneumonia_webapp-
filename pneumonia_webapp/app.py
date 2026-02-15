@@ -1,5 +1,12 @@
 from flask import Flask, request, render_template, send_file, redirect, url_for, session
 import os
+import sys
+
+# Add the directory of this file to Python path so it can find infer.py
+script_dir = os.path.dirname(os.path.abspath(__file__))
+if script_dir not in sys.path:
+    sys.path.insert(0, script_dir)
+
 import uuid
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
